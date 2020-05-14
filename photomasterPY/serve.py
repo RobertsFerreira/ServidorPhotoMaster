@@ -20,7 +20,7 @@ def enviarfoto():
         f'message': 'image received. size={img.shape[1]}x{img.shape[0]}'}
     # transforma a string em json.
     response_pickled = jsonpickle.encode(response)
-    filename = 'D:/Program Files (x86)/Repositorio/PhotoMaster/Original.png'
+    filename = 'D:/Program Files (x86)/Repositorio/ServidorPhotoMaster/Original.png'
     cv2.imwrite(filename, img)
     changefiltro('negativo', filename)
     changefiltro('logaritmo', filename)
@@ -38,15 +38,15 @@ def receberfoto(filtro):
     g.filtro = filtro
     caminhofoto = ""
     if filtro == "negativo":
-        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemNegativada.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/ServidorPhotoMaster/ImagemNegativada.png"
     elif filtro == "logaritmo":
-        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemComLogaritmo.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/ServidorPhotoMaster/ImagemComLogaritmo.png"
     elif filtro == "logInverso":
-        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemComlogInverso.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/ServidorPhotoMaster/ImagemComlogInverso.png"
     elif filtro == "original":
-        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/Original.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/ServidorPhotoMaster/Original.png"
     elif filtro == "prewitt":
-        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemcomPrewitt.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/ServidorPhotoMaster/ImagemcomPrewitt.png"
 
     return send_file(caminhofoto, mimetype='image/png')
 

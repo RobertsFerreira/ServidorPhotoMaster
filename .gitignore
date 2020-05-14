@@ -123,3 +123,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+ImagemComLogaritmo.png
+ImagemcomLogInverso.png
+ImagemNegativada.png
+ImagemcomPrewitt.png
