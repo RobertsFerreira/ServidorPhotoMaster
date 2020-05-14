@@ -38,15 +38,15 @@ def receberfoto(filtro):
     g.filtro = filtro
     caminhofoto = ""
     if filtro == "negativo":
-        caminhofoto = "d:\\Program Files (x86)\\Repositorio\\PhotoMaster\\ImagemNegativada.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemNegativada.png"
     elif filtro == "logaritmo":
-        caminhofoto = "d:\\Program Files (x86)\\Repositorio\\PhotoMaster\\ImagemComLogaritmo.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemComLogaritmo.png"
     elif filtro == "logInverso":
-        caminhofoto = "d:\\Program Files (x86)\\Repositorio\\PhotoMaster\\ImagemComlogInverso.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemComlogInverso.png"
     elif filtro == "original":
-        caminhofoto = "d:\\Program Files (x86)\\Repositorio\\PhotoMaster\\Original.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/Original.png"
     elif filtro == "prewitt":
-        caminhofoto = "d:\\Program Files (x86)\\Repositorio\\PhotoMaster\\ImagemcomPrewitt.png"
+        caminhofoto = "d:/Program Files (x86)/Repositorio/PhotoMaster/ImagemcomPrewitt.png"
 
     return send_file(caminhofoto, mimetype='image/png')
 

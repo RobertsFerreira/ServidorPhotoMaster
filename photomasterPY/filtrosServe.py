@@ -116,7 +116,7 @@ def prewitt(nome):
                 imagemNova.itemset((linha, coluna, 1), verde)
                 imagemNova.itemset((linha, coluna, 2), vermelho)
 
-    cv2.imwrite("ImagemcomPrewitt", imagemNova)
+    cv2.imwrite("ImagemcomPrewitt.png", imagemNova)
 
 
 def logInverso(constante, nome):
