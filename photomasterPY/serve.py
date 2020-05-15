@@ -56,6 +56,32 @@ def teste():
     return '[{"status": "ok"}]'
 
 
+@app.route('/lista')
+def lista():
+
+    json = """
+    [
+        {
+          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/original"
+        },
+        {
+          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/negativo"
+        },
+        {
+          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/logaritmo"
+        },
+        {
+          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/logInverso"
+        },
+        {
+          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/prewitt"
+        }
+    ]
+    """
+
+    return json
+
+
 if __name__ == "__main__":
     from waitress import serve
     serve(app, host="0.0.0.0", port=5000)
