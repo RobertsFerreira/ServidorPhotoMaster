@@ -62,19 +62,20 @@ def lista():
     json = """
     [
         {
-          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/original"
+          "imagem": "http://192.168.0.197:5000/receberfoto/original"
         },
         {
-          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/negativo"
+          "imagem": "http://192.168.0.197:5000/receberfoto/negativo"
         },
         {
-          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/logaritmo"
+          "imagem": "http://192.168.0.197:5000/receberfoto/logaritmo"
         },
         {
-          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/logInverso"
+          "imagem":
+           "http://192.168.0.197:5000/receberfoto/logInverso"
         },
         {
-          "imagem": "http://robertferreira.ddns.net:5000/receberfoto/prewitt"
+          "imagem": "http://192.168.0.197:5000/receberfoto/prewitt"
         }
     ]
     """
